@@ -9,14 +9,14 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\Socialite\Providers;
+namespace Qbhy\SimpleSocialite\Providers;
 
-use Overtrue\Socialite\AccessToken;
-use Overtrue\Socialite\AccessTokenInterface;
-use Overtrue\Socialite\InvalidArgumentException;
-use Overtrue\Socialite\ProviderInterface;
-use Overtrue\Socialite\User;
-use Overtrue\Socialite\WeChatComponentInterface;
+use Qbhy\SimpleSocialite\AccessToken;
+use Qbhy\SimpleSocialite\AccessTokenInterface;
+use Qbhy\SimpleSocialite\InvalidArgumentException;
+use Qbhy\SimpleSocialite\ProviderInterface;
+use Qbhy\SimpleSocialite\User;
+use Qbhy\SimpleSocialite\WeChatComponentInterface;
 
 /**
  * Class WeChatProvider.

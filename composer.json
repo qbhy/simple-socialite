@@ -1,10 +1,10 @@
 {
-    "name": "overtrue/socialite",
+    "name": "96qbhy/simple-socialite",
     "description": "A collection of OAuth 2 packages that extracts from laravel/socialite.",
     "keywords": ["OAuth", "social", "login", "Weibo", "WeChat", "QQ"],
     "autoload": {
         "psr-4": {
-            "Overtrue\\Socialite\\": "src/"
+            "Qbhy\\SimpleSocialite\\": "src/"
         }
     },
     "require": {
@@ -19,8 +19,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "overtrue",
-            "email": "anzhengchao@gmail.com"
+            "name": "qbhy",
+            "email": "96qbhy@gmail.com"
         }
     ]
 }

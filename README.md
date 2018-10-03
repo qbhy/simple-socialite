@@ -1,13 +1,13 @@
 <h1 align="center"> Socialite</h1>
 <p align="center">
-<a href="https://travis-ci.org/overtrue/socialite"><img src="https://travis-ci.org/overtrue/socialite.svg?branch=master" alt="Build Status"></a>
-<a href="https://packagist.org/packages/overtrue/socialite"><img src="https://poser.pugx.org/overtrue/socialite/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/overtrue/socialite"><img src="https://poser.pugx.org/overtrue/socialite/v/unstable.svg" alt="Latest Unstable Version"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/socialite/build-status/master"><img src="https://scrutinizer-ci.com/g/overtrue/socialite/badges/build.png?b=master" alt="Build Status"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/socialite/?branch=master"><img src="https://scrutinizer-ci.com/g/overtrue/socialite/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
-<a href="https://scrutinizer-ci.com/g/overtrue/socialite/?branch=master"><img src="https://scrutinizer-ci.com/g/overtrue/socialite/badges/coverage.png?b=master" alt="Code Coverage"></a>
-<a href="https://packagist.org/packages/overtrue/socialite"><img src="https://poser.pugx.org/overtrue/socialite/downloads" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/overtrue/socialite"><img src="https://poser.pugx.org/overtrue/socialite/license" alt="License"></a>
+<a href="https://travis-ci.org/qbhy/simple-socialite"><img src="https://travis-ci.org/qbhy/simple-socialite.svg?branch=master" alt="Build Status"></a>
+<a href="https://packagist.org/packages/qbhy/simple-socialite"><img src="https://poser.pugx.org/qbhy/simple-socialite/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/qbhy/simple-socialite"><img src="https://poser.pugx.org/qbhy/simple-socialite/v/unstable.svg" alt="Latest Unstable Version"></a>
+<a href="https://scrutinizer-ci.com/g/qbhy/simple-socialite/build-status/master"><img src="https://scrutinizer-ci.com/g/qbhy/simple-socialite/badges/build.png?b=master" alt="Build Status"></a>
+<a href="https://scrutinizer-ci.com/g/qbhy/simple-socialite/?branch=master"><img src="https://scrutinizer-ci.com/g/qbhy/simple-socialite/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+<a href="https://scrutinizer-ci.com/g/qbhy/simple-socialite/?branch=master"><img src="https://scrutinizer-ci.com/g/qbhy/simple-socialite/badges/coverage.png?b=master" alt="Code Coverage"></a>
+<a href="https://packagist.org/packages/qbhy/simple-socialite"><img src="https://poser.pugx.org/qbhy/simple-socialite/downloads" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/qbhy/simple-socialite"><img src="https://poser.pugx.org/qbhy/simple-socialite/license" alt="License"></a>
 </p>
 
 
@@ -31,7 +31,7 @@ PHP >= 7.0
 # Installation
 
 ```shell
-$ composer require "overtrue/socialite" -vvv
+$ composer require "qbhy/simple-socialite" -vvv
 ```
 
 # Usage

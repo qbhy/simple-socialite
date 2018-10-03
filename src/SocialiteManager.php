@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\Socialite;
+namespace Qbhy\SimpleSocialite;
 
 use Closure;
 use InvalidArgumentException;
@@ -24,7 +24,7 @@ class SocialiteManager implements FactoryInterface
     /**
      * The configuration.
      *
-     * @var \Overtrue\Socialite\Config
+     * @var \Qbhy\SimpleSocialite\Config
      */
     protected $config;
 
@@ -89,7 +89,7 @@ class SocialiteManager implements FactoryInterface
     /**
      * Set config instance.
      *
-     * @param \Overtrue\Socialite\Config $config
+     * @param \Qbhy\SimpleSocialite\Config $config
      *
      * @return $this
      */

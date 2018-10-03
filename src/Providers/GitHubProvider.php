@@ -9,12 +9,12 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\Socialite\Providers;
+namespace Qbhy\SimpleSocialite\Providers;
 
 use Exception;
-use Overtrue\Socialite\AccessTokenInterface;
-use Overtrue\Socialite\ProviderInterface;
-use Overtrue\Socialite\User;
+use Qbhy\SimpleSocialite\AccessTokenInterface;
+use Qbhy\SimpleSocialite\ProviderInterface;
+use Qbhy\SimpleSocialite\User;
 
 /**
  * Class GitHubProvider.

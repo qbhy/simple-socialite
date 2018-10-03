@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\Socialite\Providers;
+namespace Qbhy\SimpleSocialite\Providers;
 
-use Overtrue\Socialite\AccessTokenInterface;
-use Overtrue\Socialite\ProviderInterface;
-use Overtrue\Socialite\User;
+use Qbhy\SimpleSocialite\AccessTokenInterface;
+use Qbhy\SimpleSocialite\ProviderInterface;
+use Qbhy\SimpleSocialite\User;
 
 /**
  * Class FacebookProvider.
@@ -78,7 +78,7 @@ class FacebookProvider extends AbstractProvider implements ProviderInterface
      *
      * @param string $code
      *
-     * @return \Overtrue\Socialite\AccessToken
+     * @return \Qbhy\SimpleSocialite\AccessToken
      */
     public function getAccessToken($code)
     {

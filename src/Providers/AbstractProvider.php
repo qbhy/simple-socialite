@@ -9,15 +9,15 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Overtrue\Socialite\Providers;
+namespace Qbhy\SimpleSocialite\Providers;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
-use Overtrue\Socialite\AccessToken;
-use Overtrue\Socialite\AccessTokenInterface;
-use Overtrue\Socialite\AuthorizeFailedException;
-use Overtrue\Socialite\InvalidStateException;
-use Overtrue\Socialite\ProviderInterface;
+use Qbhy\SimpleSocialite\AccessToken;
+use Qbhy\SimpleSocialite\AccessTokenInterface;
+use Qbhy\SimpleSocialite\AuthorizeFailedException;
+use Qbhy\SimpleSocialite\InvalidStateException;
+use Qbhy\SimpleSocialite\ProviderInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -55,7 +55,7 @@ abstract class AbstractProvider implements ProviderInterface
     protected $clientSecret;
 
     /**
-     * @var \Overtrue\Socialite\AccessTokenInterface
+     * @var \Qbhy\SimpleSocialite\AccessTokenInterface
      */
     protected $accessToken;
 
@@ -143,7 +143,7 @@ abstract class AbstractProvider implements ProviderInterface
     /**
      * Get the raw user for the given access token.
      *
-     * @param \Overtrue\Socialite\AccessTokenInterface $token
+     * @param \Qbhy\SimpleSocialite\AccessTokenInterface $token
      *
      * @return array
      */
@@ -154,7 +154,7 @@ abstract class AbstractProvider implements ProviderInterface
      *
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Qbhy\SimpleSocialite\User
      */
     abstract protected function mapUserToObject(array $user);
 
@@ -237,7 +237,7 @@ abstract class AbstractProvider implements ProviderInterface
     }
 
     /**
-     * @param \Overtrue\Socialite\AccessTokenInterface $accessToken
+     * @param \Qbhy\SimpleSocialite\AccessTokenInterface $accessToken
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ abstract class AbstractProvider implements ProviderInterface
      *
      * @param string $code
      *
-     * @return \Overtrue\Socialite\AccessTokenInterface
+     * @return \Qbhy\SimpleSocialite\AccessTokenInterface
      */
     public function getAccessToken($code)
     {
@@ -437,7 +437,7 @@ abstract class AbstractProvider implements ProviderInterface
      *
      * @param \Psr\Http\Message\StreamInterface|array $body
      *
-     * @return \Overtrue\Socialite\AccessTokenInterface
+     * @return \Qbhy\SimpleSocialite\AccessTokenInterface
      */
     protected function parseAccessToken($body)
     {
