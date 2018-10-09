@@ -49,7 +49,7 @@ class GitHubProvider extends AbstractProvider implements ProviderInterface
      */
     protected function getUserByToken(AccessTokenInterface $token)
     {
-        $userUrl = 'https://api.github.com/user?access_token='.$token->getToken();
+        $userUrl = 'https://api.github.com/user?access_token=' . $token->getToken();
 
         $response = $this->getHttpClient()->get(
             $userUrl, $this->getRequestOptions()
@@ -73,7 +73,7 @@ class GitHubProvider extends AbstractProvider implements ProviderInterface
      */
     protected function getEmailByToken($token)
     {
-        $emailsUrl = 'https://api.github.com/user/emails?access_token='.$token->getToken();
+        $emailsUrl = 'https://api.github.com/user/emails?access_token=' . $token->getToken();
 
         try {
             $response = $this->getHttpClient()->get(
@@ -83,8 +83,8 @@ class GitHubProvider extends AbstractProvider implements ProviderInterface
             return;
         }
 
-        foreach (json_decode($response->getBody(), true) as $email) {
-            if ($email['primary'] && $email['verified']) {
+        foreach ($result = json_decode($response->getBody(), true) as $email) {
+            if (isset($email['primary']) && $email['primary'] && $email['verified']) {
                 return $email['email'];
             }
         }
@@ -96,12 +96,12 @@ class GitHubProvider extends AbstractProvider implements ProviderInterface
     protected function mapUserToObject(array $user)
     {
         return new User([
-            'id' => $this->arrayItem($user, 'id'),
+            'id'       => $this->arrayItem($user, 'id'),
             'username' => $this->arrayItem($user, 'login'),
             'nickname' => $this->arrayItem($user, 'login'),
-            'name' => $this->arrayItem($user, 'name'),
-            'email' => $this->arrayItem($user, 'email'),
-            'avatar' => $this->arrayItem($user, 'avatar_url'),
+            'name'     => $this->arrayItem($user, 'name'),
+            'email'    => $this->arrayItem($user, 'email'),
+            'avatar'   => $this->arrayItem($user, 'avatar_url'),
         ]);
     }
 
